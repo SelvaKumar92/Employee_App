@@ -1,4 +1,4 @@
-# Example-Employee-App
+# SK-Employee-App
 A Simple Android example app.
 
 ## Key Features:
