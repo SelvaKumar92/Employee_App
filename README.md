@@ -3,7 +3,7 @@ A Simple Android example app.
 
 ## Key Features:
 
-* Androoid Jetpack componets ---> 
+* Android Jetpack ---> 
 
      1. MVVM
      2. LiveData
