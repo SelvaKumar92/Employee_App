@@ -17,7 +17,6 @@ import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
 
-
 class EmployeeViewModel @Inject constructor(
     application: Application,
     private var mUserRepository: EmployeeRepository
