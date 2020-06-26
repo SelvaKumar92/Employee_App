@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:itemCount="10"
+        tools:listitem="@layout/remove_list_item_layout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/ic_add_black_24dp"
+        app:elevation="25dp"
+        app:fabSize="auto"
+        app:maxImageSize="56dp"
+        app:useCompatPadding="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:tint="@android:color/white"
+        android:layout_marginBottom="140dp"
+        android:src="@android:drawable/ic_lock_power_off"
+        app:elevation="25dp"
+        app:fabSize="auto"
+        app:maxImageSize="36dp"
+        app:useCompatPadding="true" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

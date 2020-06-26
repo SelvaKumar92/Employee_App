@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.selva.example_employee_app.viewmodel.LoginViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="46dp"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Attedance Management" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <!-- Email Label -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_email_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:hint="@string/email"
+                    android:text="@={viewModel.email}"
+                    app:met_floatingLabelTextColor="@android:color/black"
+                    app:met_textColor="@android:color/black"
+                    app:met_baseColor="@android:color/darker_gray"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextSize="16sp"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+                <!-- Password Label -->
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_password_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:hint="@string/password"
+                    app:met_textColor="@android:color/black"
+                    app:met_floatingLabelTextColor="@android:color/black"
+
+                    android:inputType="textPassword"
+                    android:text="@={viewModel.password}"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextSize="16sp"
+                    app:met_primaryColor="@color/colorPrimaryDark" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:padding="8dp"
+                    android:text="@string/login" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
