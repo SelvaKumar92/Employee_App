@@ -10,18 +10,11 @@ A Simple Android example app.
      3. Pagination
      4. Data Binding
      5. Room
-     6. WorkManager
-     7. Lifecycles
+     6. Lifecycles
      
 * androidx library
      
 * dagger2 for DI
-
-* Retrofit for RESTful api data retrival
-
-* GSON for retrofit data conversion
-
-* android JUnit test
 
 * Kotlin Coroutines
 
