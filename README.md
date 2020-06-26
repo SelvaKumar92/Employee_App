@@ -17,5 +17,3 @@ A Simple Android example app.
 * dagger2 for DI
 
 * Kotlin Coroutines
-
-* R8 for code shriking
